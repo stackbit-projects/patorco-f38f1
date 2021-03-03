@@ -3,7 +3,7 @@ import _ from 'lodash';
 import {graphql} from 'gatsby';
 
 import {Layout} from '../components/index';
-import {toStyleObj, withPrefix, markdownify, classNames, Link, getPageByFilePath, getPages} from '../utils';
+import {toStyleObj, withPrefix, Link, getPageByFilePath, getPages} from '../utils';
 import Picture from '../components/Picture';
 import BuyButton from '../components/BuyButton';
 import ProductGrid from '../components/ProductGrid';
@@ -25,7 +25,6 @@ export default class Product extends React.Component {
         return (
             <Layout {...this.props}>
                 <main className="content">
-                    
                     <section className="product content__row content__row--full-width">
                         <div className="product__background-left">
                             {_.get(this.props, 'pageContext.site.siteMetadata.bg_image_primary', null) && (
@@ -75,7 +74,6 @@ export default class Product extends React.Component {
                                 <h2 className="content__row-title">Related</h2>
                                 <ProductGrid {...this.props} product_pages={product_pages} category_url={_.get(category_page, 'url', null)} cssClass={'store__product-grid'} site={this.props.pageContext.site} />
                             </section>
-                            
                         );
                     })())}
                     <Link to={withPrefix('/store')} className="content__row content__row--full-width content__row--mb-0 product__back-to-store"{...(_.get(this.props, 'pageContext.site.siteMetadata.bg_image_product', null) ? ({style: toStyleObj('background-image: url(\'' + withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.bg_image_product', null)) + '\')')}) : null)}>
