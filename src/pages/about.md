@@ -47,7 +47,7 @@ sections:
       style: primary
       arrow: true
 seo:
-  title: About
+  title: Baltimore Smoke Shop
   description: This is the about page
   extra:
     - name: 'og:type'
