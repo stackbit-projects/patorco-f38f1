@@ -3,7 +3,7 @@ import _ from 'lodash';
 import {graphql} from 'gatsby';
 
 import {Layout} from '../components/index';
-import {toStyleObj, withPrefix, Link, getPageByFilePath, getPages} from '../utils';
+import {toStyleObj, withPrefix, markdownify, Link, getPageByFilePath, getPages} from '../utils';
 import Picture from '../components/Picture';
 import BuyButton from '../components/BuyButton';
 import ProductGrid from '../components/ProductGrid';
