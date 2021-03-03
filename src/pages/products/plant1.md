@@ -11,7 +11,20 @@ default_original_image: images/plant1-lg.jpg
 featured: true
 order: 1
 category: src/pages/category/bigplants.md
+type: hero_section
+    section_id: hero_section
+    background_image: images/header.jpg
+    background_image_opacity: 65
+    content: >-
+      # Real, beautiful plants right to your door
 
+      Don't forget to add your Snipcart API key to the site's configuration to
+      enable Cart actions.
+    actions:
+      - title: See all items
+        url: /store
+        arrow: true
+        style: primary
 seo:
   title: Nulla suscipit
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
