@@ -7,6 +7,7 @@ import {toStyleObj, withPrefix, Link, getPageByFilePath, getPages} from '../util
 import Picture from '../components/Picture';
 import BuyButton from '../components/BuyButton';
 import ProductGrid from '../components/ProductGrid';
+import HeroSection from '../components/'
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
