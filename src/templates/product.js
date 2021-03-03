@@ -19,7 +19,7 @@ export const query = graphql`
   }
 `;
 
-export default{Product, Hero} Product extends React.Component {
+export default{Product, Hero} extends React.Component {
     render() {
         let primary_bg_img_opacity_pct = _.get(this.props, 'pageContext.site.siteMetadata.bg_image_primary_opacity', null) || 100;
         let primary_bg_img_opacity = primary_bg_img_opacity_pct * 0.01;
