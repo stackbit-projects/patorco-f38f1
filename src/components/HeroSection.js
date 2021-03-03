@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import {toStyleObj, withPrefix, markdownify, Link, classNames} from '../utils';
 
-import data from '../pages/products/pla'
+import data from '../pages/products/plant1.md'
 
 
 export default class HeroSection extends React.Component {
