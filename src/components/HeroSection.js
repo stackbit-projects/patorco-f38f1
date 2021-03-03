@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import {toStyleObj, withPrefix, markdownify, Link, classNames} from '../utils';
 
-import data from '../pages/products/plant1.md';
+ from '../pages/products/plant1.md';
 
 
 console.log('Data , ' data);
