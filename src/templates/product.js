@@ -65,15 +65,7 @@ export default class Product extends React.Component {
                                 {_.get(this.props, 'pageContext.frontmatter.description', null)}
                             </article>
                             <BuyButton {...this.props} product_page={this.props.pageContext} />
-                             <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
-                {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
-                    let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
-                    let Component = components[component];
-                    return (
-                    <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
-                    )
-                })}
-            </main>
+                            
                         </div>
                     </section>
                     {_.get(this.props, 'pageContext.frontmatter.category', null) && ((() => {
