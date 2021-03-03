@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import {graphql} from 'gatsby';
 
-import {Layout} from '../components/index';
+import components, {Layout} from '../components/index';
 import {toStyleObj, withPrefix, Link, getPageByFilePath, getPages} from '../utils';
 import Picture from '../components/Picture';
 import BuyButton from '../components/BuyButton';
