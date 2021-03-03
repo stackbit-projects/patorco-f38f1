@@ -6,7 +6,7 @@ import {toStyleObj, withPrefix, markdownify, Link, classNames} from '../utils';
 import data from '../pages/products/plant1.md';
 
 
-console.log('Data');
+console.log('Data , ' data);
 
 
 export default class HeroSection extends React.Component {
