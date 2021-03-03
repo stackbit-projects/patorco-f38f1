@@ -8,7 +8,7 @@ import Picture from '../components/Picture';
 import BuyButton from '../components/BuyButton';
 import ProductGrid from '../components/ProductGrid';
 import HeroSection from '../components/HeroSection';
-import FaqSection from '../components/FaqSection'
+import FaqSection from '../components/FaqSection';
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
