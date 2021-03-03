@@ -54,7 +54,7 @@ seo:
       value: website
       keyName: property
     - name: 'og:title'
-      value: About
+      value: Baltimore Smoke Shop
       keyName: property
     - name: 'og:description'
       value: This is the about page
