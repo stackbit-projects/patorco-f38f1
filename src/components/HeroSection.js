@@ -13,6 +13,7 @@ export default class HeroSection extends React.Component {
                 {_.get(section, 'background_image', null) && (
                 <div className="hero__bg-img" style={toStyleObj('background-image: url(\'' + withPrefix(_.get(section, 'background_image', null)) + '\'); opacity: ' + bg_img_opacity + ';')}/>
                 )}
+                
                 <div className="hero__title">{markdownify(_.get(section, 'content', null))}</div>
                 <div className="hero__links link-group">
                   {_.map(_.get(section, 'actions', null), (action, action_idx) => {
