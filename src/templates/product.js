@@ -74,7 +74,7 @@ export default class Product extends React.Component {
                         return (
                             <section className="content__row">
                                 <h2 className="content__row-title">Related</h2>
-                                Hero
+                                
                                 <ProductGrid {...this.props} product_pages={product_pages} category_url={_.get(category_page, 'url', null)} cssClass={'store__product-grid'} site={this.props.pageContext.site} />
                             </section>
                         );
